@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ATividade 3</title>
+</head>
+<body>
+    
+
+
+
+    <script>
+
+            var nome = prompt("Digite seu nome: ");
+
+            var Valor = parseInt(prompt("Olá " +nome+ ", digite o valor do Produto: "));
+
+            var parcela = parseInt(prompt("Escolha como quer parcelar. Em 3 vezes ou 5 vezes: "));
+        
+        while(true){
+
+
+            if(parcela == 3){
+                var porcentagem = Valor / 100 * 10
+                var novoValor = Valor + porcentagem
+                alert("Perfeito, com isso será dado um acréscimo de 10%. O novo valor será: " + novoValor)
+                break
+            }
+            else if (parcela == 5) {
+                var porcentagem = Valor / 100 * 20
+                var novoValor = Valor + porcentagem
+                alert("Perfeito, com isso será dado um acréscimo de 20%. O novo valor será:  " + novoValor)
+                break
+            }
+            else{
+                var parcela = parseInt(prompt("Desculpe, não temos essa opção, somente 3 vezes e 5 vezes: "));
+                
+            }
+        }
+        
+        
+
+
+
+
+
+    </script>
+
+</body>
+</html>
